@@ -16,7 +16,7 @@
 
                     <div class="content">
                         <div class="subtitle"><?=$config[0]->hero_desc?> </div>
-                        <h1 class="title"><?=$config[0]->hero_title?> </h1> <a href="<?=base_url()?>gallery" class="a-btn simple">
+                        <h1 class="title"><?=$config[0]->hero_title?> </h1> <a href="<?=base_url()?>about" class="a-btn simple">
                             <span class="a-btn-line"></span>EXPORE </a>
                     </div>
                 </div>

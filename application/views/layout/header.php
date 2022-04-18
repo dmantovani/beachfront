@@ -44,32 +44,6 @@
             </div>
             <!--/NAVIGATION-->
 
-
-            <!-- mobile icon -->
-            <div class="prague-nav-menu-icon">
-                <a href="#">
-                    <i></i>
-                </a>
-            </div>
-            <!-- /mobile icon -->
-
-            <!--SOCIAL-->
-            <div class="prague-social-nav">
-                <a href="#">
-                    <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                </a>
-
-                <ul class="social-content">
-                    <li>
-                        <a target="_blank" href="https://www.instagram.net/foxthemes">
-                            <i aria-hidden="true" class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-            <!--/SOCIAL-->
-
         </div>
     </header>
     <!--END HEADER-->

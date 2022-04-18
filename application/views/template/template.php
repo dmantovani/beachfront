@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="<?=base_url()?>asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/unit-test.css">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/style.css?v=1">
+    <link rel="stylesheet" href="<?=base_url()?>asset/css/custom-front.css?v=<?=time()?>">
     
 </head>
 

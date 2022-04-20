@@ -1,3 +1,4 @@
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css'>
 	<!-- SLIDE HOME -->
     <div class="row">
         <div class="col-xs-12 no-padd">
@@ -58,7 +59,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="item_key" value="" />
+                                            <div class="col-md-12 col-sm-12">
+                                                <h5>Check date</h5>
+                                            </div>
+                                            <input type="text" name="dates" class="d-block my-4 mx-auto" style="color: #000;">
+                                            
                                             <div class="frm_submit">
 
                                                 <input type="submit" value="Send" />
@@ -79,3 +84,58 @@
     </div>
     <!--/MAIN BODY-->
     <!-- END CONTACT FORM -->
+
+      <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/momentjs/latest/moment.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js'></script>
+    <script type="text/javascript">
+        const self = $('input[name="dates"]')
+
+        self.daterangepicker({
+            applyButtonClasses: 'd-none',
+            showDropdowns: false,
+            opens: "center",
+            drops: "down",
+            autoApply: false,
+            startDate: self.data('start'),
+            endDate: self.data('end'),
+            minDate: self.data('start'),
+            maxDate: self.data('end'),
+            locale: {
+              format: "DD/MM/YYYY",
+              separator: " - ",
+              applyLabel: "Apply",
+              cancelLabel: "Cancel",
+              fromLabel: "De",
+              toLabel: "Até",
+              customRangeLabel: "Custom",
+              weekLabel: "S",
+              daysOfWeek: [
+               "Sun",
+               "Mon",
+               "Tue",
+               "Wed",
+               "Thu",
+               "Fri",
+               "Sat"
+              ],
+              monthNames: [
+               "January",
+               "February",
+               "March",
+               "April",
+               "May",
+               "June",
+               "July",
+               "August",
+               "September",
+               "October",
+               "November",
+               "December"
+              ],
+              firstDay: 1
+            }
+          });
+    </script>

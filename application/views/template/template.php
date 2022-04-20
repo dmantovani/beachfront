@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no" />
 
+
+    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/swiper.min.css">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/slick.min.css">
@@ -19,7 +22,10 @@
     <link rel="stylesheet" href="<?=base_url()?>asset/css/unit-test.css">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/style.css?v=1">
     <link rel="stylesheet" href="<?=base_url()?>asset/css/custom-front.css?v=<?=time()?>">
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 
@@ -39,7 +45,16 @@
 	<?= $content ?>
 	
 	<?= $footer ?> 
-	
+	<script type="text/javascript">
+
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+    </script>
     <script src="<?=base_url()?>asset/js/jquery.js"></script>
     <script src="<?=base_url()?>asset/js/swiper.min.js"></script>
     <script src="<?=base_url()?>asset/js/isotope.pkgd.min.js"></script>

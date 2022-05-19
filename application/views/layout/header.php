@@ -33,6 +33,7 @@
                             <ul class="main-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>">Home</a> </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>about">ABOUT</a> </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>staff">STAFF</a> </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>destinations">DESTINATIONS</a> </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>gallery">GALLERY</a> </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children "><a href="<?=base_url()?>contact">CONTACT</a> </li>
